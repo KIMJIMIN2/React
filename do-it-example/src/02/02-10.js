@@ -11,6 +11,7 @@ function work3(onDone) {
 function urgentWork() {
   console.log("긴급 작업");
 }
+
 // 실제 비동기 함수를 사용하는 예
 work1(function (msg1) {
   console.log("done after 100ms:" + msg1);
@@ -22,6 +23,7 @@ work1(function (msg1) {
   });
 });
 urgentWork();
+
 // ES6의 예제
 const work1 = () =>
   new Promise((resolve) => {
